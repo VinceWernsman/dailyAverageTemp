@@ -26,18 +26,14 @@ import java.util.Scanner;
                 System.out.println(dailyAverageTemp[6]);
 
 
-                double [] weeklyAverageTemp = new double[7];
-                double [] weeklyAverageTemp = "0","1", "2", "3", "4", "5", "6"};
-                double weeklyAverageTemp = sum / (dailyAverageTemp.length);
 
+                double sum = 0.0;
+                for(int i=0; i< dailyAverageTemp.length; i++){
+                sum += dailyAverageTemp[i];
+                }
 
-
-
-
-
-
-
-
+                double weeklyAverage = sum / (dailyAverageTemp.length);
+                System.out.println ("Weekly Average  " + weeklyAverage);
 
 
 
